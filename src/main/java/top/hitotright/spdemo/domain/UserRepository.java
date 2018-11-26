@@ -9,6 +9,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     User findByNameAndAge(String name, Integer age);
 
-    @Query("from User u where u.name=:name") //这里事hsq和sql不一样
+    @Query("from User u where u.name=:name")
+        //这里事hsq和sql不一样
     User findUser(@Param("name") String name);
 }
