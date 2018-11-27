@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.core.annotation.Order;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
@@ -31,7 +32,8 @@ public class UserControllerTest {
     }
 
     @Test(timeout = 1000)
-    public void aGetList() throws Exception {
+    @Order(1)
+    public void getList() throws Exception {
         request = MockMvcRequestBuilders.get("/users/");
         mvc.perform(request)
                 .andExpect(status().isOk()) // 期待返回状态吗码200
@@ -40,7 +42,8 @@ public class UserControllerTest {
     }
 
     @Test
-    public void bPostUser() throws Exception {
+    @Order(2)
+    public void postUser() throws Exception {
         request = MockMvcRequestBuilders.post("/users/")
                 .param("id", "1")
                 .param("name", "测试大师")
@@ -50,7 +53,8 @@ public class UserControllerTest {
     }
 
     @Test
-    public void cGetUser() throws Exception {
+    @Order(3)
+    public void getUser() throws Exception {
         request = MockMvcRequestBuilders.get("/users/");
         mvc.perform(request)
                 .andExpect(status().isOk())
@@ -58,7 +62,8 @@ public class UserControllerTest {
     }
 
     @Test
-    public void dPutUser() throws Exception {
+    @Order(4)
+    public void putUser() throws Exception {
         request = MockMvcRequestBuilders.put("/users/1")
                 .param("name", "测试终极大师")
                 .param("age", "30");
@@ -68,7 +73,8 @@ public class UserControllerTest {
     }
 
     @Test
-    public void eEeleteUser() throws Exception {
+    @Order(5)
+    public void deleteUser() throws Exception {
         request = MockMvcRequestBuilders.delete("/users/1");
         mvc.perform(request)
                 .andExpect(content().string(equalTo("success")));
