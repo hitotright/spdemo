@@ -1,8 +1,8 @@
-package top.hitotright.spdemo.service;
+package top.hitotright.demo.spdemo.service;
 
 import org.springframework.stereotype.Service;
-import top.hitotright.spdemo.domain.User;
-import top.hitotright.spdemo.domain.UserRepository;
+import top.hitotright.demo.spdemo.domain.User;
+import top.hitotright.demo.spdemo.domain.UserRepository;
 
 import javax.annotation.Resource;
 

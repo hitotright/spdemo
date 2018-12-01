@@ -1,4 +1,4 @@
-package top.hitotright.spdemo.api;
+package top.hitotright.demo.spdemo.api;
 
 import org.junit.Before;
 import org.junit.FixMethodOrder;

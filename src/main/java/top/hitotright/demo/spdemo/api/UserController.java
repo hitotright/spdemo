@@ -1,11 +1,11 @@
-package top.hitotright.spdemo.api;
+package top.hitotright.demo.spdemo.api;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
-import top.hitotright.spdemo.model.User;
+import top.hitotright.demo.spdemo.model.User;
 
 import java.util.*;
 

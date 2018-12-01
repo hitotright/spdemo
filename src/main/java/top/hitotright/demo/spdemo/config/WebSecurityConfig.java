@@ -1,4 +1,4 @@
-package top.hitotright.spdemo.config;
+package top.hitotright.demo.spdemo.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

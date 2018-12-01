@@ -1,4 +1,4 @@
-package top.hitotright.spdemo.config;
+package top.hitotright.demo.spdemo.config;
 
 import javafx.application.Application;
 import org.junit.Assert;

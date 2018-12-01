@@ -1,4 +1,4 @@
-package top.hitotright.spdemo.config;
+package top.hitotright.demo.spdemo.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;

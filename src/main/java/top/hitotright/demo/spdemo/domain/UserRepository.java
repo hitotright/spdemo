@@ -1,4 +1,4 @@
-package top.hitotright.spdemo.domain;
+package top.hitotright.demo.spdemo.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

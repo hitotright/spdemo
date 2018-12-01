@@ -1,4 +1,4 @@
-package top.hitotright.spdemo.domain;
+package top.hitotright.demo.spdemo.domain;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;

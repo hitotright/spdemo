@@ -1,4 +1,4 @@
-package top.hitotright.spdemo.web;
+package top.hitotright.demo.spdemo.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

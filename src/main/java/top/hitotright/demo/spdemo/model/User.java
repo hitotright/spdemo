@@ -1,4 +1,4 @@
-package top.hitotright.spdemo.model;
+package top.hitotright.demo.spdemo.model;
 
 public class User {
     private Long id;

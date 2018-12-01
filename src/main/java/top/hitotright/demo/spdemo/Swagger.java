@@ -1,4 +1,4 @@
-package top.hitotright.spdemo;
+package top.hitotright.demo.spdemo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
