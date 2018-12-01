@@ -39,6 +39,12 @@
             <artifactId>spring-session-core</artifactId>
         </dependency>
 
+        <!--模板引擎-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
         <!--数据库-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -57,7 +63,7 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-        <!--其他-->
+        <!--监控-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
