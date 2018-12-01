@@ -1,6 +1,9 @@
 package top.hitotright.spdemo.domain;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class User {
@@ -8,9 +11,12 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotEmpty(message="姓名不能为空！")
     @Column(nullable = false)
     private String name;
 
+    @NotNull(message="年龄不能为空！")
+    @Min(value=18,message="年龄必须大于18岁")
     @Column(nullable = false)
     private Integer age;
 
