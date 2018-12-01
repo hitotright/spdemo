@@ -9,12 +9,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping(value = "/")
 public class HomeController {
-    @RequestMapping(value = "home", method = RequestMethod.GET)
-    @ResponseBody
-    public String getHome() {
-        return "home";
-    }
-
 
     @RequestMapping("")
     public String home(ModelMap map) {
@@ -22,5 +16,15 @@ public class HomeController {
         map.addAttribute("host", "http://www.test.com");
         // return模板文件的名称，对应src/main/resources/templates/index.html
         return "index";
+    }
+
+    @RequestMapping(value = "home", method = RequestMethod.GET)
+    public String getHome(ModelMap map) {
+        return "home";
+    }
+
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
     }
 }

@@ -39,6 +39,12 @@
             <artifactId>spring-session-core</artifactId>
         </dependency>
 
+        <!--权限控制-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <!--模板引擎-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
