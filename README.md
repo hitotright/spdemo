@@ -8,4 +8,4 @@
 * [thymeleaf 模板引擎](http://blog.didispace.com/springbootweb/)
 * [表单验证](http://www.cnblogs.com/tenWood/p/8644899.html)
 * [spring security 用户认证](http://blog.didispace.com/springbootsecurity/)
-* [cache and redis 使用缓存，添加redis]()
+* [cache and redis 使用缓存，添加redis](http://blog.didispace.com/springbootcache1/)
