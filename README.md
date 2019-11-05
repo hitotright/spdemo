@@ -1,10 +1,11 @@
 # spdemo
 
 ####学习过程见git log记录或者tag标签
-* [restful api](http://blog.didispace.com/springbootrestfulapi/)
-* [jpa](http://blog.didispace.com/springbootdata2/)
+* [restful api 路由使用](http://blog.didispace.com/springbootrestfulapi/)
+* [jpa 数据访问](http://blog.didispace.com/springbootdata2/)
 * [swagger 自动生成api文档](http://blog.didispace.com/springbootswagger2/)
 * [多数据源配置](http://blog.didispace.com/springbootmultidatasource/)
-* [thymeleaf模板引擎](http://blog.didispace.com/springbootweb/)
+* [thymeleaf 模板引擎](http://blog.didispace.com/springbootweb/)
 * [表单验证](http://www.cnblogs.com/tenWood/p/8644899.html)
-* [用户认证(spring security)](http://blog.didispace.com/springbootsecurity/)
+* [spring security 用户认证](http://blog.didispace.com/springbootsecurity/)
+* [cache and redis 使用缓存，添加redis]()

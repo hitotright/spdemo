@@ -27,7 +27,7 @@ public class SpdemoApplicationTests {
     public void test() throws Exception {
 
         // 创建10条记录
-        userRepository.save(new User("AAA", 10));
+        userRepository.save(new User("AAA", 19));
         userRepository.save(new User("BBB", 20));
         userRepository.save(new User("CCC", 30));
         userRepository.save(new User("DDD", 40));
@@ -51,10 +51,12 @@ public class SpdemoApplicationTests {
         Assert.assertEquals("FFF", userRepository.findByNameAndAge("FFF", 60).getName());
 
         // 测试删除姓名为AAA的User
-        userRepository.delete(userRepository.findByName("AAA"));
+        userRepository.delete(userRepository.findByName("FFF"));
 
         // 测试findAll, 查询所有记录, 验证上面的删除是否成功
         Assert.assertEquals(9, userRepository.findAll().size());
 
+        //测试缓存
+        Assert.assertEquals(60,userRepository.findByName("FFF").getAge().longValue());
     }
 }
