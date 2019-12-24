@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/mvc">
+<head>
+    <title>异步测试</title>
+</head>
+
+<body>
+<h1>异步测试</h1>
+<h2 id="n1"></h2>
+<h2 id="n2"></h2>
+</body>
+<script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+<script>
+    $(function(){
+        function test(){
+            $.get('/async/test', function(data){
+                console.log(data);
+                $('#n1').html(data);
+            });
+        }
+        function test2(){
+            $.get('/async/test2', function(data){
+                console.log(data);
+                $('#n2').html(data);
+            });
+        }
+        test();
+        test2();
+    });
+</script>
+</html>

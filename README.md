@@ -9,3 +9,4 @@
 * [表单验证](http://www.cnblogs.com/tenWood/p/8644899.html)
 * [spring security 用户认证](http://blog.didispace.com/springbootsecurity/)
 * [cache and redis 使用缓存，添加redis](http://blog.didispace.com/springbootcache1/)
+* 异步化请求（扩大吞吐量）
