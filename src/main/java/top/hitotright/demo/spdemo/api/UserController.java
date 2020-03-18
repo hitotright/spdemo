@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
-import top.hitotright.demo.spdemo.model.User;
+import top.hitotright.demo.spdemo.entity.User;
 
 import java.util.*;
 

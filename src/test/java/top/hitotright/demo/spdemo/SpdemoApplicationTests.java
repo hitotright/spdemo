@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import top.hitotright.demo.spdemo.domain.User;
-import top.hitotright.demo.spdemo.domain.UserRepository;
+import top.hitotright.demo.spdemo.dao.User;
+import top.hitotright.demo.spdemo.dao.UserRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

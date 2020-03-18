@@ -1,4 +1,4 @@
-package top.hitotright.demo.spdemo.web;
+package top.hitotright.demo.spdemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -6,7 +6,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import top.hitotright.demo.spdemo.domain.User;
+import top.hitotright.demo.spdemo.entity.User;
 import top.hitotright.demo.spdemo.service.UserService;
 
 import javax.annotation.Resource;
