@@ -12,7 +12,7 @@ public class BlogProperties {
     private String author;
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -20,7 +20,7 @@ public class BlogProperties {
     }
 
     public String getAuthor() {
-        return author;
+        return this.author;
     }
 
     public void setAuthor(String author) {

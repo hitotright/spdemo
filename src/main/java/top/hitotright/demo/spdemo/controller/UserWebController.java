@@ -11,6 +11,7 @@ import top.hitotright.demo.spdemo.service.UserService;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping(value = "/user")
@@ -19,9 +20,11 @@ public class UserWebController {
     @Resource
     private UserService userService;
 
-    @RequestMapping("/add")
+    @RequestMapping("")
     public String add(ModelMap map){
-        map.put("url","/user/add_save");
+        List<User> list = userService.list();
+        map.addAttribute("list",list);
+        map.addAttribute("url","/user/add_save");
         return "user";
     }
 
